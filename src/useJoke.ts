@@ -6,13 +6,17 @@ export default function useJoke() {
   const getJoke = useCallback(async () => {
     setJoke('Loading...');
 
-    const res = await fetch('https://icanhazdadjoke.com/', {
-      headers: {
-        Accept: 'application/json'
-      }
-    });
+    try {
+      const res = await fetch('https://icanhazdadjoke.com/', {
+        headers: {
+          Accept: 'application/json'
+        }
+      });
 
-    setJoke((await res.json()).joke);
+      setJoke((await res.json()).joke);
+    } catch (e) {
+      setJoke('Failed to fetch joke');
+    }
   }, []);
 
   return { joke, getJoke };
