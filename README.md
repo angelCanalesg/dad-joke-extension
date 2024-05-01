@@ -20,5 +20,5 @@ The code serves as an example of how to create a browser extension with React.
 
 ## How to publish the extension globally
 - Increment the version number in `public/manifest.json`
-- `npm run build`
+- `npm run build:prod`
 - `build.zip` will be created root of this project - this can be submitted to Google or another browser extension store
