@@ -1,0 +1,13 @@
+{
+	"manifest_version": 3,
+	"name": "Dad joke",
+	"version": "1.0",
+	"description": "A browser extension that tells you a dad joke",
+	"action": {
+		"default_popup": "index.html"
+	},
+	"icons": {
+		"16": "logo-192.png",
+		"32": "logo-512.png"
+	}
+}
