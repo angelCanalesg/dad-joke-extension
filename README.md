@@ -22,6 +22,6 @@ You will see the extension in the browser at `http://localhost:3000`
 8. The extension should be installed and available in the extensions section
 
 ## How to publish the extension globally
-1. Increment the version number in `manifest.json`
+1. Increment the version number in `public/manifest.json`
 2. Run `npm run build`
 3. `build.zip` will be created root of this project - this can be submitted to Google or another browser extension store
